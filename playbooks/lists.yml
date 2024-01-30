@@ -7,9 +7,9 @@
       - Atlantic
       - Pacific
       - Arctic
-      - Southern Antarctic
+      - Antarctic
   
   tasks:
     - name: List oceans
       debug:
-      	msg: "The five oceans in the world are {{ oceans }}
+      	msg: "The five oceans in the world are {{ oceans }}"
