@@ -1,0 +1,15 @@
+---
+- name: Ansible list
+  hosts: webserver
+  vars:
+  	oceans:
+  	  - Indian
+      - Atlantic
+      - Pacific
+      - Arctic
+      - Southern Antarctic
+  
+  tasks:
+    - name: List oceans
+      debug:
+      	msg: "The five oceans in the world are {{ oceans }}
