@@ -1,6 +1,6 @@
 ---
 - name: Install Apache web server
-  hosts: webservers                 #group of hosts acting as webservers
+  hosts: <host>                 #group of hosts acting as webservers
   become: yes                        # become sudo
   tasks:
     - name: Install Apache
