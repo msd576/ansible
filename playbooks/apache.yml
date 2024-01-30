@@ -1,0 +1,15 @@
+---
+- name: Install Apache web server
+  hosts: [webserver]                 #group of hosts acting as webservers
+  become: yes                        # become sudo
+  tasks:
+    - name: Install Apache
+      yum:                           # yum pkg manager
+        name: httpd
+        state: present               # install if not already present
+        
+    - name: Start Apache
+      service:
+        name: httpd
+        state: started               # systemctl start httpd
+        enabled: true                # systemctl enable httpd
