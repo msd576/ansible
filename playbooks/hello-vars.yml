@@ -1,0 +1,10 @@
+---
+- name: Hello with vars
+  hosts: webserver
+  vars:
+  	username: msd576
+    
+  tasks:
+  - name: Ansible basic variable example
+    debug:
+    	msg: "Hello, {{ username }}"
