@@ -28,7 +28,7 @@ $ logout<br>
 $ ssh <host> <br>
 $ sudo visudo <br>
 add this line at the end of the file: <br>
-ansible  ALL=(ALL)  NOPASSWD: ALL<br>
+ansible      ALL=(ALL)      NOPASSWD: ALL<br>
 save and quit, logout.<br>
 
 ### Configure inventory and run playbook
