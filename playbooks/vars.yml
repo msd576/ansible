@@ -1,0 +1,6 @@
+working_dir: /home/msd/ansible/msd
+
+service_list:
+- httpd
+- nfs
+- git
