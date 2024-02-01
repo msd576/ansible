@@ -1,0 +1,8 @@
+---
+- name: example copying file with owner and permissions
+  copy:
+    src: /home/msd/index.html
+    dest: /usr/share/nginx/html/
+    owner: msd
+    group: msd
+    mode: 0644
