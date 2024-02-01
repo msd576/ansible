@@ -1,0 +1,14 @@
+# ansible-playbook vars-play.yml -e @vars.yml
+---
+- name: playbook vars
+  hosts: localhost
+  tasks:
+    - name: create working directory
+      file:
+        name: "{{ working_dir }}"
+        state: directory
+    - name: write service list
+      lineinfile:
+        path: "{{ working_dir }}/services.txt"
+        create: yes
+        line: "{{ service_list }}"
